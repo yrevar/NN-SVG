@@ -8,11 +8,11 @@ function AlexNet() {
     var w = window.innerWidth;
     var h = window.innerHeight;
 
-    var color1 = '#eeeeee';
+    var color1 = '#ccffcc';
     var color2 = '#99ddff';
     var color3 = '#ffbbbb';
 
-    var rectOpacity = 0.4;
+    var rectOpacity = 0.1;
     var filterOpacity = 0.4;
 
     var line_material = new THREE.LineBasicMaterial( { 'color':0x000000 } );
@@ -22,17 +22,17 @@ function AlexNet() {
 
     var architecture = [];
     var architecture2 = [];
-    var betweenLayers = 20;
+    var betweenLayers = 30;
 
     var logDepth = true;
     var depthScale = 10;
     var logWidth = true;
-    var widthScale = 10;
-    var logConvSize = false;
-    var convScale = 1;
+    var widthScale = 15;
+    var logConvSize = true;
+    var convScale = 6;
 
-    var showDims = false;
-    var showConvDims = false;
+    var showDims = true;
+    var showConvDims = true;
 
     let depthFn = (depth) => logDepth ? (Math.log(depth) * depthScale) : (depth * depthScale);
     let widthFn = (width) => logWidth ? (Math.log(width) * widthScale) : (width * widthScale);
@@ -52,7 +52,7 @@ function AlexNet() {
 
     // var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 100000 );
     var camera = new THREE.OrthographicCamera( w / - 2, w / 2, h / 2, h / - 2, -10000000, 10000000 );
-    camera.position.set(-219, 92, 84);
+    camera.position.set(-240, 120, 140);
 
     var renderer;
     var rendererType = 'webgl';
@@ -283,7 +283,7 @@ function AlexNet() {
 
         var spriteMaterial = new THREE.SpriteMaterial({ map: texture });
         var sprite = new THREE.Sprite( spriteMaterial );
-        sprite.scale.set( 10, 5, 1.0 );
+        sprite.scale.set( 14, 8, 1.0 );
         sprite.center.set( 0,1 );
         return sprite;
     }

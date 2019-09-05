@@ -118,7 +118,7 @@
 
                             <br>
                             <div>
-                                <input type="color" value="#eeeeee" id="color1">
+                                <input type="color" value="#ccffcc" id="color1">
                                 <label for="color1">Color 1</label>
                             </div>
                             <div>
@@ -131,20 +131,20 @@
                             </div>
                             <div>
                                 <label for="rectOpacity">Tensor Opacity</label>
-                                <input type="range" id="rectOpacity" name="" min="0" max="1" step="0.01" value="0.4" style="position: relative; top: 3px;">
+                                <input type="range" id="rectOpacity" name="" min="0" max="1" step="0.01" value="0.1" style="position: relative; top: 3px;">
                             </div>
                             <div>
                             <div>
                                 <label for="strideOpacity">Filter Opacity</label>
                                 <input type="range" id="strideOpacity" name="" min="0" max="1" step="0.01" value="0.4" style="position: relative; top: 3px;">
                             </div>
-<!--                             <div>
+                            <!-- <div>
                                 <label for="borderWidth">Border Width</label>
                                 <input type="range" id="borderWidth" name="" min="0.01" max="3" step="0.01" value="1" style="position: relative; top: 3px;">
                             </div> -->
                             <div>
                                 <label for="betweenLayers">Spacing Between Layers</label>
-                                <input type="range" id="betweenLayers" name="" min="10" max="100" step="1" value="20" style="position: relative; top: 3px;">
+                                <input type="range" id="betweenLayers" name="" min="10" max="100" step="1" value="30" style="position: relative; top: 3px;">
                             </div>
 
                             <hr>
@@ -163,26 +163,26 @@
                             </div>
                             <div>
                                 <label for="widthScale">Width Size Scaling</label>
-                                <input type="range" id="widthScale" name="" min="1" max="100" step="1" value="10" style="position: relative; top: 3px;">
+                                <input type="range" id="widthScale" name="" min="1" max="100" step="1" value="15" style="position: relative; top: 3px;">
                                 <span id="widthSpan">10</span>
                             </div>
                             <div>
-                                <input type="checkbox" id="logConvSize" name="logConvSize" value="logConvSize">
+                                <input type="checkbox" id="logConvSize" name="logConvSize" value="logConvSize" checked>
                                 <label for="logConvSize">Log Convolutional Filter Size Scaling</label>
                             </div>
                             <div>
                                 <label for="convScale">Convolutional Filter Scaling</label>
-                                <input type="range" id="convScale" name="" min="1" max="10" step="1" value="1" style="position: relative; top: 3px;">
+                                <input type="range" id="convScale" name="" min="1" max="10" step="1" value="6" style="position: relative; top: 3px;">
                                 <span id="convSpan">1</span>
                             </div>
 
                             <hr>
                             <div>
-                                <input type="checkbox" id="showDims" name="showDims" value="showDims">
+                                <input type="checkbox" id="showDims" name="showDims" value="showDims" checked>
                                 <label for="showDims">Show Tensor Dimensions</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="showConvDims" name="showConvDims" value="showConvDims">
+                                <input type="checkbox" id="showConvDims" name="showConvDims" value="showConvDims" checked>
                                 <label for="showConvDims">Show Conv Dimensions</label>
                             </div>
 
@@ -193,19 +193,9 @@
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-12">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="height" step="1" value="224" />
-                                        <input type="number" class="form-control" name="width" step="1" value="224" />
+                                        <input type="number" class="form-control" name="height" step="1" value="32" />
+                                        <input type="number" class="form-control" name="width" step="1" value="32" />
                                         <input type="number" class="form-control" name="depth" step="1" value="3" />
-                                        <input type="number" class="form-control" name="filterHeight" step="1" value="11" />
-                                        <input type="number" class="form-control" name="filterWidth" step="1" value="11" />
-                                    </div>
-                                </div>
-                                <div class="row entry">
-                                    <div class="input-group mb-2 mr-sm-2 col-12">
-                                        <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="height" step="1" value="55" />
-                                        <input type="number" class="form-control" name="width" step="1" value="55" />
-                                        <input type="number" class="form-control" name="depth" step="1" value="96" />
                                         <input type="number" class="form-control" name="filterHeight" step="1" value="5" />
                                         <input type="number" class="form-control" name="filterWidth" step="1" value="5" />
                                     </div>
@@ -213,41 +203,41 @@
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-12">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="height" step="1" value="27" />
-                                        <input type="number" class="form-control" name="width" step="1" value="27" />
-                                        <input type="number" class="form-control" name="depth" step="1" value="256" />
-                                        <input type="number" class="form-control" name="filterHeight" step="1" value="3" />
-                                        <input type="number" class="form-control" name="filterWidth" step="1" value="3" />
+                                        <input type="number" class="form-control" name="height" step="1" value="32" />
+                                        <input type="number" class="form-control" name="width" step="1" value="32" />
+                                        <input type="number" class="form-control" name="depth" step="1" value="32" />
+                                        <input type="number" class="form-control" name="filterHeight" step="2" value="2" />
+                                        <input type="number" class="form-control" name="filterWidth" step="2" value="2" />
                                     </div>
                                 </div>
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-12">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="height" step="1" value="13" />
-                                        <input type="number" class="form-control" name="width" step="1" value="13" />
-                                        <input type="number" class="form-control" name="depth" step="1" value="384" />
-                                        <input type="number" class="form-control" name="filterHeight" step="1" value="3" />
-                                        <input type="number" class="form-control" name="filterWidth" step="1" value="3" />
+                                        <input type="number" class="form-control" name="height" step="1" value="16" />
+                                        <input type="number" class="form-control" name="width" step="1" value="16" />
+                                        <input type="number" class="form-control" name="depth" step="1" value="32" />
+                                        <input type="number" class="form-control" name="filterHeight" step="1" value="5" />
+                                        <input type="number" class="form-control" name="filterWidth" step="1" value="5" />
                                     </div>
                                 </div>
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-12">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="height" step="1" value="13" />
-                                        <input type="number" class="form-control" name="width" step="1" value="13" />
-                                        <input type="number" class="form-control" name="depth" step="1" value="384" />
-                                        <input type="number" class="form-control" name="filterHeight" step="1" value="3" />
-                                        <input type="number" class="form-control" name="filterWidth" step="1" value="3" />
+                                        <input type="number" class="form-control" name="height" step="1" value="16" />
+                                        <input type="number" class="form-control" name="width" step="1" value="16" />
+                                        <input type="number" class="form-control" name="depth" step="1" value="64" />
+                                        <input type="number" class="form-control" name="filterHeight" step="2" value="2" />
+                                        <input type="number" class="form-control" name="filterWidth" step="2" value="2" />
                                     </div>
                                 </div>
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-12">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="height" step="1" value="13" />
-                                        <input type="number" class="form-control" name="width" step="1" value="13" />
-                                        <input type="number" class="form-control" name="depth" step="1" value="256" />
-                                        <input type="number" class="form-control" name="filterHeight" step="1" value="3" />
-                                        <input type="number" class="form-control" name="filterWidth" step="1" value="3" />
+                                        <input type="number" class="form-control" name="height" step="1" value="8" />
+                                        <input type="number" class="form-control" name="width" step="1" value="8" />
+                                        <input type="number" class="form-control" name="depth" step="1" value="64" />
+                                        <input type="number" class="form-control" name="filterHeight" step="1" value="5" />
+                                        <input type="number" class="form-control" name="filterWidth" step="1" value="5" />
                                     </div>
                                 </div>
                                 <div class="row entry">
@@ -268,19 +258,19 @@
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-5">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="vectorLength" step="1" value="2048" />
+                                        <input type="number" class="form-control" name="vectorLength" step="1" value="4096" />
                                     </div>
                                 </div>
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-5">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="vectorLength" step="1" value="2048" />
+                                        <input type="number" class="form-control" name="vectorLength" step="1" value="1024" />
                                     </div>
                                 </div>
                                 <div class="row entry">
                                     <div class="input-group mb-2 mr-sm-2 col-5">
                                         <button class="btn btn-secondary btn-remove input-group-prepend"><span class="fa fa-minus"></span></button>
-                                        <input type="number" class="form-control" name="vectorLength" step="1" value="1000" />
+                                        <input type="number" class="form-control" name="vectorLength" step="1" value="4" />
                                     </div>
                                 </div>
                                 <div class="row entry">
@@ -353,8 +343,8 @@ $('#rendererType input:radio').change(function() {
     rendererType = this.value;
     if (rendererType == 'svg') {
         showDims = false;
-        $("#showDims").prop('disabled', true).prop('checked', false);
-        $("#showConvDims").prop('disabled', true).prop('checked', false);
+        $("#showDims").prop('disabled', true).prop('checked', true);
+        $("#showConvDims").prop('disabled', true).prop('checked', true);
         $("#download").removeClass('disabled');
     }
     else if (rendererType == 'webgl') {
